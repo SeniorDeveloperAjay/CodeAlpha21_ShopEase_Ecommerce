@@ -1,3 +1,4 @@
+require("dotenv").config();
 const bcrypt = require("bcryptjs");
 const User = require("./backend/User");
 const Product = require("./backend/Product");
@@ -6,7 +7,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
@@ -16,7 +17,7 @@ app.use(express.static(path.join(__dirname, "frontend")));
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/shopease")
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("MongoDB connected successfully");
   })
@@ -88,52 +89,7 @@ app.post("/api/login", async (req, res) => {
     });
   }
 });
-// Add products to MongoDB
-app.post("/api/products", async (req, res) => {
-  try {
-    const products = [
-      {
-        name: "Wireless Headphones",
-        price: 1499,
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-        description:
-          "Enjoy high-quality sound with these wireless headphones. They are comfortable, lightweight and perfect for daily use.",
-      },
-      {
-        name: "Smart Watch",
-        price: 2499,
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-        description:
-          "Track your fitness, monitor your activities and stay connected with this stylish smart watch.",
-      },
-      {
-        name: "Running Shoes",
-        price: 1999,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-        description:
-          "Comfortable and lightweight running shoes designed for everyday workouts and running.",
-      },
-      {
-        name: "Backpack",
-        price: 999,
-        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-        description:
-          "A spacious and durable backpack suitable for college, work and everyday travel.",
-      },
-    ];
 
-    await Product.deleteMany({});
-    await Product.insertMany(products);
-
-    res.json({
-      message: "Products added successfully",
-    });
-  } catch (error) {
-    res.status(500).json({
-      message: "Failed to add products",
-    });
-  }
-});
 // Get all products
 app.get("/api/products", async (req, res) => {
   try {
