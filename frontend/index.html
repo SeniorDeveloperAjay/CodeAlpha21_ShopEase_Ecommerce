@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Online Store</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to ShopEase</h1>
+
+        <p>Find the best products at the best prices.</p>
+
+        <button onclick="scrollToProducts()">Shop Now</button>
+      </div>
+    </section>
+    <!-- Store Highlights -->
+    <section class="highlights">
+      <div class="highlight-card">
+        <h3>🛍️ Quality Products</h3>
+        <p>Carefully selected products for everyday needs.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>💰 Best Prices</h3>
+        <p>Shop great products at affordable prices.</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>🚚 Easy Ordering</h3>
+        <p>Simple and convenient online shopping experience.</p>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <h2>Our Products</h2>
+      <div class="product-container" id="product-container"></div>
+    </section>
+    <!-- Why Shop With Us -->
+    <section class="why-shop">
+      <h2>Why Shop With Us?</h2>
+
+      <div class="why-container">
+        <div class="why-card">
+          <h3>🔒 Secure Shopping</h3>
+          <p>Your account information is securely stored.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>⚡ Easy & Fast</h3>
+          <p>Browse products and place orders with ease.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>📦 Reliable Orders</h3>
+          <p>Keep track of your orders from one place.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ShopEase</h3>
+          <p>Your simple and convenient online store.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="#products">Products</a>
+          <a href="orders.html">My Orders</a>
+          <a href="cart.html">Cart</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: support@shopease.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

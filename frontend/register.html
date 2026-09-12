@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <section class="auth-section">
+      <div class="auth-box">
+        <h2>Create Account</h2>
+
+        <form id="register-form">
+          <input
+            type="text"
+            id="register-name"
+            placeholder="Full Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="register-email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Password"
+            required
+          />
+
+          <button type="submit">Register</button>
+        </form>
+
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="auth.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

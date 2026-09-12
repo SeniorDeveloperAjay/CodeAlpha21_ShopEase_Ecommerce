@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShopEase - Product Details</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <!-- Product Details -->
+    <section class="product-details">
+      <img id="product-image" src="" alt="Product" />
+
+      <div>
+        <h1 id="product-name"></h1>
+
+        <p class="price" id="product-price"></p>
+
+        <p id="product-description"></p>
+
+        <button id="add-product">Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="product.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

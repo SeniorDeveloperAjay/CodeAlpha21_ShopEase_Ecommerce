@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShopEase - Checkout</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <section class="checkout-section">
+      <div class="checkout-box">
+        <h2>Checkout</h2>
+
+        <h3>Customer Details</h3>
+
+        <form id="checkout-form">
+          <input
+            type="text"
+            id="checkout-name"
+            placeholder="Full Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="checkout-email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            type="text"
+            id="checkout-address"
+            placeholder="Delivery Address"
+            required
+          />
+
+          <input type="text" id="checkout-city" placeholder="City" required />
+
+          <input
+            type="text"
+            id="checkout-pincode"
+            placeholder="PIN Code"
+            required
+          />
+
+          <h3>Order Summary</h3>
+
+          <div id="checkout-items">
+            <!-- Products will appear here -->
+          </div>
+
+          <h3 id="checkout-total">Total: ₹0</h3>
+
+          <button type="submit">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="checkout.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

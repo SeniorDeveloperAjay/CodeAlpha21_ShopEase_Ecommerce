@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShopEase - Order Confirmed</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <section class="success-section">
+      <div class="success-box">
+        <h1>🎉 Order Confirmed!</h1>
+
+        <p>Thank you for shopping with ShopEase.</p>
+
+        <p id="order-id"></p>
+
+        <button onclick="window.location.href = 'index.html'">
+          Continue Shopping
+        </button>
+      </div>
+    </section>
+
+    <script src="navbar.js"></script>
+    <script src="order-success.js"></script>
+  </body>
+</html>

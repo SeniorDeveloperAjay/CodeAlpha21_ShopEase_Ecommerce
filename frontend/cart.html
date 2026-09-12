@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">ShopEase</div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="orders.html">My Orders</a>
+        <span id="user-info"></span>
+        <a href="login.html" id="login-link">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cart-count">(0)</span></a>
+      </nav>
+    </header>
+
+    <section class="cart-section">
+      <h2>Shopping Cart</h2>
+
+      <div id="cart-items">
+        <!-- Cart items will appear here -->
+      </div>
+
+      <h3 id="cart-total">Total: ₹0</h3>
+
+      <div class="cart-actions">
+        <button onclick="window.location.href = 'index.html#products'">
+          Continue Shopping
+        </button>
+
+        <button onclick="goToCheckout()">Checkout</button>
+      </div>
+    </section>
+
+    <script src="cart.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>
