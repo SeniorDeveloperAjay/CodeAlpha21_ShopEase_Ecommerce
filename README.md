@@ -48,3 +48,18 @@ ShopEase/
 ├── package.json
 ├── package-lock.json
 └── server.js
+## Live Demo
+
+Visit the deployed ShopEase website:
+
+https://shopease-4rh8.onrender.com/index.html
+
+## GitHub Repository
+
+Source code:
+
+https://github.com/SeniorDeveloperAjay/CodeAlpha21_ShopEase_Ecommerce
+
+## Internship Project
+
+This project was developed as **Task 1 - Simple E-Commerce Store** for the CodeAlpha internship.
